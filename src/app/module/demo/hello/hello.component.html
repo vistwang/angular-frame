@@ -1,0 +1,22 @@
+<p>
+  <!-- *ngIf="condition else elseTemplate" -->
+  hello works!
+</p>
+<ng-template #name>
+</ng-template>
+
+<ng-template #inputTemplateWithContent let-param let-name="name">
+  <!-- let-param 取的是绑定对象myContext的$implicit字段的指，let-param相和let-param="$implicit"是等价的， -->
+  <!-- let-name="name" 取的是绑定对象myContext里面name字段对应的值-->
+  <div>{{param}} - {{name}}</div>
+</ng-template>
+<!-- *ngTemplateOutlet="inputTemplateWithContent; context: myContext"  这种联合模式等于下面这种分开的-->
+<!-- [ngTemplateOutlet]="inputTemplateWithContent" [ngTemplateOutletContext]="myContext" -->
+<ng-container [ngTemplateOutlet]="inputTemplateWithContent" [ngTemplateOutletContext]="myContext"></ng-container>
+
+<ng-template #paramTemplate>
+  咱们传递给子元素了
+  <app-son2></app-son2>
+</ng-template>
+<app-son [inputTemplate]="paramTemplate"></app-son>
+<app-son></app-son>

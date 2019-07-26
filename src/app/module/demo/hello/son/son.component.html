@@ -1,0 +1,7 @@
+<p>
+  son works!
+</p>
+<ng-template #defaultTemplate>
+  <div>咱们没有传递参数</div>
+</ng-template>
+<ng-container *ngTemplateOutlet="inputTemplate ? inputTemplate: defaultTemplate"></ng-container>
