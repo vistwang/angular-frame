@@ -1,26 +1,13 @@
-.engine-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
+.page-wrapper{
+  position: relative;
+  padding-top: 65px;
+  height: 100%;
 
-    #renderCanvas {
-        width: 100%;
-        height: 100%;
-        touch-action: none;
-    }
-
-    #renderCanvas:focus {
-        outline: none;
-    }
-}
-
-.ui-wrapper {
-    position: absolute;
-
-    * {
-        z-index: 10;
-    }
+  .content-wrapper{
+    position: relative;
+    margin-left: 220px;
+    padding: 10px;
+    background: #e8edf7;
+    transition: all .2s ease;
+  }
 }

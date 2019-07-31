@@ -1,10 +1,15 @@
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div class="span2">
-      <!--边栏内容-->
-    </div>
-    <div class="span10">
+<ng-container>
+  <web-header></web-header>
+</ng-container>
+<div class="page-wrapper">
+  <ng-container>
+      <ng-container *ngIf="true">
+          <web-navbar></web-navbar>
+      </ng-container>
+      <ng-container *ngIf="false">
+      </ng-container>
+  </ng-container>
+  <div class="content-wrapper">
       <router-outlet></router-outlet>
-    </div>
   </div>
 </div>

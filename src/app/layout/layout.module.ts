@@ -4,9 +4,12 @@ import { RouterModule } from '@angular/router';
 import { WebSharedModule } from '@web-shared';
 
 import { LayoutComponent } from './layout.component';
+import { WebHeaderComponent } from './components/web-header/web-header.component';
+import { WebNavbarComponent } from './components/web-navbar/web-navbar.component';
+import { LogoComponent } from './components/web-header/logo/logo.component';
 
 @NgModule({
-  declarations: [LayoutComponent],
+  declarations: [LayoutComponent, WebHeaderComponent, WebNavbarComponent, LogoComponent],
   imports: [
     CommonModule,
     RouterModule,

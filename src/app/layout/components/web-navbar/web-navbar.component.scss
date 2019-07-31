@@ -1,0 +1,24 @@
+.nav-col {
+  position: absolute;
+  top: 65px;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  width: 220px;
+  transition: width .2s ease;
+  background: #4e89f8;
+  .nav-container{
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+
+    .menu-content{
+      display: flex;
+      padding-left: 2rem;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      cursor: pointer;
+      outline: 0;
+      color: #fff;
+    }
+  }
+}

@@ -3,3 +3,21 @@
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+html {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  background: #e8edf7;
+  height: 100%;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+[role="move"] {
+  cursor: move;
+}
