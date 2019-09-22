@@ -1,5 +1,6 @@
 import {
-    AfterViewInit, Component, OnInit, TemplateRef, ViewChild, ViewContainerRef
+    AfterViewInit, Component, HostBinding, HostListener, OnInit, TemplateRef, ViewChild,
+    ViewContainerRef
 } from '@angular/core';
 
 @Component({
@@ -10,11 +11,22 @@ import {
 export class HelloComponent implements OnInit, AfterViewInit {
   @ViewChild('name', {static: true}) tplRef: TemplateRef<any>;
 
+  @HostBinding('style.color') color: string;
+  @HostBinding('style.borderColor') borderColor: string;
+
   constructor(private vcRef: ViewContainerRef) { }
   myContext = { $implicit: 'implicit默认值', name: '王阳阳' };
   son2 = '<app-son2></app-son2>';
-  ngOnInit() {
 
+  ngOnInit() {
+    this.color = 'blue';
+    this.borderColor = 'tomato';
+  }
+
+  // 绑定方法
+  @HostListener('keydown') onKeydown() {
+    this.color = 'red';
+    this.borderColor = 'yellow';
   }
 
   ngAfterViewInit() {

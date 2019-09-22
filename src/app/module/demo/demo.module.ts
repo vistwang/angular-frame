@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import {
     MatButtonModule, MatCardModule, MatIconModule, MatMenuModule, MatToolbarModule
 } from '@angular/material';
@@ -10,6 +11,7 @@ import { WebSharedModule } from '@web-shared';
 import { CustomElementComponent } from './custom-element/custom-element.component';
 import { DemoBabylonjsComponent } from './demo-babylonjs/demo-babylonjs.component';
 import { DemoCdkDragComponent } from './demo-cdk-drag/demo-cdk-drag.component';
+import { DemoFormComponent } from './demo-form/demo-form.component';
 import { DemoHighchartsComponent } from './demo-highcharts/demo-highcharts.component';
 import { DemoHttpComponent } from './demo-http/demo-http.component';
 import { DemoMaterialComponent } from './demo-material/demo-material.component';
@@ -34,7 +36,8 @@ import { Son2Component } from './hello/son2/son2.component';
     DemoComponent,
     SonComponent,
     Son2Component,
-    DemoServerComponent
+    DemoServerComponent,
+    DemoFormComponent
   ],
   imports: [
     CommonModule,
@@ -44,7 +47,8 @@ import { Son2Component } from './hello/son2/son2.component';
     MatMenuModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    ReactiveFormsModule
   ],
   exports: [
   ],

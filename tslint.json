@@ -6,6 +6,8 @@
   "rules": {
     "array-type": false,
     "arrow-parens": false,
+    "guard-for-in": "error", // 禁止使用 for in
+    "prefer-arrow-callback": "error", // 所有函数必须是 箭头函数
     "deprecation": {
       "severity": "warn"
     },
