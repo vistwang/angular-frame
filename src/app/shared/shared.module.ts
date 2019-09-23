@@ -5,6 +5,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 
 import { CarouselModule } from './component/carousel/carousel.module';
+import { TextareaModule } from './component/textarea/textarea.module';
 import { OnErrorImgModule } from './directive/on-error-img/on-error-img.module';
 
 @NgModule({
@@ -14,14 +15,16 @@ import { OnErrorImgModule } from './directive/on-error-img/on-error-img.module';
     HttpClientModule,
     OnErrorImgModule,
     CarouselModule,
-    MatTableModule
+    MatTableModule,
+    TextareaModule
   ],
   exports: [
     HttpClientModule,
     OnErrorImgModule,
     CarouselModule,
     MatTableModule,
-    MatListModule
+    MatListModule,
+    TextareaModule
   ]
 })
 export class WebSharedModule { }

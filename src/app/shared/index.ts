@@ -2,3 +2,4 @@
 export { WebSharedModule } from './shared.module';
 // 按需加载
 export { CarouselModule } from './component/carousel';
+export { TextareaModule } from './component/textarea/textarea.module';

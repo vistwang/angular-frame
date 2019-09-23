@@ -30,6 +30,10 @@ export class DemoFormComponent implements OnInit {
     });
   }
 
+  onChange(e) {
+
+  }
+
   onSubmit({value, valid}) {
     if (!valid) { return; }
     console.log(JSON.stringify(value));
