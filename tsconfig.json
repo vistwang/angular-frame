@@ -33,7 +33,7 @@
       ],
       "@service/*": [
         "src/app/core/service/"
-      ],
+      ]
     }
   }
 }
