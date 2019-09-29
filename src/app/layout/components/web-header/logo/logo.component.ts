@@ -10,6 +10,10 @@ export class LogoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+  }
+
+  openBottomSheet(): void {
   }
 
 }

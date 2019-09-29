@@ -1,3 +1,33 @@
 table{
   width: 100%;
 }
+
+.example-focus-monitor {
+  padding: 20px;
+}
+
+.example-focus-monitor .cdk-mouse-focused {
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.example-focus-monitor .cdk-keyboard-focused {
+  background: rgba(0, 255, 0, 0.5);
+}
+
+.example-focus-monitor .cdk-touch-focused {
+  background: rgba(0, 0, 255, 0.5);
+}
+
+.example-focus-monitor .cdk-program-focused {
+  background: rgba(255, 0, 255, 0.5);
+}
+
+// 'mouse'表示该元素是通过鼠标获得焦点的
+
+// 'keyboard'表示该元素是通过键盘获得焦点的
+
+// 'touch'表示该元素是通过触摸屏获得焦点的
+
+// 'program'表示该元素是通过编程方式获得焦点的
+
+// null表示该元素失去了焦点

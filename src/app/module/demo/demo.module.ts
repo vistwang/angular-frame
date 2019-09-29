@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatBottomSheetModule, MatDialogModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -17,6 +18,10 @@ import { DemoFormComponent } from './demo-form/demo-form.component';
 import { DemoHighchartsComponent } from './demo-highcharts/demo-highcharts.component';
 import { DemoHttpComponent } from './demo-http/demo-http.component';
 import { DemoMaterialComponent } from './demo-material/demo-material.component';
+import {
+    MatBottomSheetComponent
+} from './demo-material/mat-bottom-sheet/mat-bottom-sheet.component';
+import { MatDialogComponent } from './demo-material/mat-dialog/mat-dialog.component';
 import { DemoRoutingModule } from './demo-routing.module';
 import { DemoServerComponent } from './demo-server/demo-server.component';
 import { DemoThreejsComponent } from './demo-threejs/demo-threejs.component';
@@ -39,10 +44,13 @@ import { Son2Component } from './hello/son2/son2.component';
     SonComponent,
     Son2Component,
     DemoServerComponent,
-    DemoFormComponent
+    DemoFormComponent,
+    MatBottomSheetComponent,
+    MatDialogComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
     DemoRoutingModule,
     WebSharedModule,
     MatButtonModule,
@@ -50,11 +58,13 @@ import { Son2Component } from './hello/son2/son2.component';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatBottomSheetModule,
+    MatDialogModule
   ],
   exports: [
   ],
-  entryComponents: [CustomElementComponent, Son2Component],
+  entryComponents: [CustomElementComponent, Son2Component, MatBottomSheetComponent],
   providers: [DemoServiceService,
     {provide: DemoServiceNewService, useExisting: DemoServiceService}]
 })

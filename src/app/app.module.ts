@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WebCoreModule } from '@web-core';
 import { WebSharedModule } from '@web-shared';
 
@@ -18,7 +19,8 @@ import { LoginComponent } from './module/login/login.component';
     WebCoreModule,
     AppRoutingModule,
     LayoutModule,
-    WebSharedModule
+    WebSharedModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
