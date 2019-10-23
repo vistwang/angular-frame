@@ -1,3 +1,4 @@
+import { OverlayModule } from '@angular/cdk/overlay';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { NgModule } from '@angular/core';
@@ -7,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatStepperModule } from '@angular/material/stepper';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { DemoServiceNewService, DemoServiceService } from '@service';
 import { WebSharedModule } from '@web-shared';
@@ -17,11 +19,13 @@ import { DemoCdkDragComponent } from './demo-cdk-drag/demo-cdk-drag.component';
 import { DemoFormComponent } from './demo-form/demo-form.component';
 import { DemoHighchartsComponent } from './demo-highcharts/demo-highcharts.component';
 import { DemoHttpComponent } from './demo-http/demo-http.component';
+import { BujinqiComponent } from './demo-material/bujinqi/bujinqi.component';
 import { DemoMaterialComponent } from './demo-material/demo-material.component';
 import {
     MatBottomSheetComponent
 } from './demo-material/mat-bottom-sheet/mat-bottom-sheet.component';
 import { MatDialogComponent } from './demo-material/mat-dialog/mat-dialog.component';
+import { OverlayPanelComponent } from './demo-material/overlay-panel/overlay-panel.component';
 import { DemoRoutingModule } from './demo-routing.module';
 import { DemoServerComponent } from './demo-server/demo-server.component';
 import { DemoThreejsComponent } from './demo-threejs/demo-threejs.component';
@@ -29,6 +33,7 @@ import { DemoComponent } from './demo.component';
 import { HelloComponent } from './hello/hello.component';
 import { SonComponent } from './hello/son/son.component';
 import { Son2Component } from './hello/son2/son2.component';
+import { ResponsiveFormComponent } from './responsive-form/responsive-form.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +51,10 @@ import { Son2Component } from './hello/son2/son2.component';
     DemoServerComponent,
     DemoFormComponent,
     MatBottomSheetComponent,
-    MatDialogComponent
+    MatDialogComponent,
+    OverlayPanelComponent,
+    BujinqiComponent,
+    ResponsiveFormComponent,
   ],
   imports: [
     CommonModule,
@@ -60,11 +68,13 @@ import { Son2Component } from './hello/son2/son2.component';
     MatCardModule,
     ReactiveFormsModule,
     MatBottomSheetModule,
-    MatDialogModule
+    MatDialogModule,
+    OverlayModule,
+    MatStepperModule
   ],
   exports: [
   ],
-  entryComponents: [CustomElementComponent, Son2Component, MatBottomSheetComponent],
+  entryComponents: [CustomElementComponent, Son2Component, MatBottomSheetComponent, OverlayPanelComponent],
   providers: [DemoServiceService,
     {provide: DemoServiceNewService, useExisting: DemoServiceService}]
 })

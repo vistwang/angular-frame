@@ -31,6 +31,9 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 
+<app-bujinqi></app-bujinqi>
+
+
 <button mat-raised-button (click)="openBottomSheet()">服务可用于在屏幕底部打开一些 Material Design 面板。 这些面板的主要目的是在移动设备上作为对话框和菜单的替代品提供交互体验</button>
 <button mat-raised-button (click)="openDialog()">Pick one</button>
 
@@ -45,4 +48,11 @@
     <button>Child Button 2</button>
   </div>
 </div>
+<div #connectComponentOrigin class="right-bottom"
+(mouseenter)="showOverlayPanelConnectComponent()"
+(mouseleave)="dismissOverlayPanelConnectComponent()">
 
+</div>
+
+<!-- 全局显示 页面中心显示 (点击的时候显示) -->
+<button (click)="showOverlayGlobalPanelCenter()">页面中心显示</button>

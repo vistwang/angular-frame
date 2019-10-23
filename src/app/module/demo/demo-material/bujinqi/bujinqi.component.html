@@ -1,0 +1,23 @@
+<button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+  {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+</button>
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+    <ng-template matStepperIcon="done">
+      <mat-icon>done_all</mat-icon>
+    </ng-template>
+    <ng-template matStepperIcon="edit">
+        <!-- <mat-icon></mat-icon> -->
+        <i>1</i>
+      </ng-template>
+  <mat-step [stepControl]="firstFormGroup">
+    <ng-template matStepLabel>Done</ng-template>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+      <ng-template matStepLabel>Fill out your address</ng-template>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    You are now done.
+  </mat-step>
+</mat-horizontal-stepper>
+

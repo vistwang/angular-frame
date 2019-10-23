@@ -15,6 +15,7 @@ import { DemoServerComponent } from './demo-server/demo-server.component';
 import { DemoThreejsComponent } from './demo-threejs/demo-threejs.component';
 import { DemoComponent } from './demo.component';
 import { HelloComponent } from './hello/hello.component';
+import { ResponsiveFormComponent } from './responsive-form/responsive-form.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,7 @@ const routes: Routes = [
       { path: 'DemoHttp', component: DemoHttpComponent },
       { path: 'DemoServer', component: DemoServerComponent },
       { path: 'form', component: DemoFormComponent },
+      { path: 're-form', component: ResponsiveFormComponent },
     ]
   }
 ];

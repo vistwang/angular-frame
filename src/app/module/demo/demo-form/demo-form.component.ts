@@ -15,6 +15,14 @@ export class DemoFormComponent implements OnInit {
   }
   user: FormGroup;
 
+  provinces = [
+    '北京',
+    '北京',
+    '北京',
+    '北京',
+    '北京',
+  ];
+
   ngOnInit() {
     // 初始化表单
     this.user = new FormGroup({

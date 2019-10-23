@@ -1,0 +1,23 @@
+<form [formGroup]="myFormGroup" ngSubmit="onSubmit()">
+  <label>
+      firstName:
+    <input type="text" formControlName="firstName">
+  </label>
+  <label>
+      lastName:
+    <input type="text" formControlName="lastName">
+  </label>
+  <label>
+    Name:
+    <input type="text" [formControl]="name">
+  </label>
+  <p>
+    Value: {{ name.value }}
+  </p>
+  <p>
+    <button mat-stroked-button color="primary" (click)="upDateName()">upDateName</button>
+  </p>
+
+  <button type="submit" mat-raised-button color="warn">Submit</button>
+</form>
+
