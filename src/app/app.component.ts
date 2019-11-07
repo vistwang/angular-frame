@@ -11,6 +11,7 @@ import { NavigationEnd, Router } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'web';
+  requestIndexedDB;
   navigationEnd$: Observable<string>;
   constructor(private router: Router) {
 
@@ -18,6 +19,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.initApp();
 
+    this.initIndexedDB();
     this.navigationEnd$.subscribe((url) => {
       console.log(url);
     });
@@ -42,6 +44,22 @@ export class AppComponent implements OnInit {
       filter(event => event instanceof NavigationEnd),
       switchMap((event: NavigationEnd) => of(event.url)
     ));
+  }
+
+  initIndexedDB() {
+    this.requestIndexedDB = window.indexedDB.open('angular_frame', 1);
+    // 成功打开数据库
+    this.requestIndexedDB.onsuccess = (event) => {
+      console.log('数据库打开成功');
+    };
+    // 事件表示打开数据库失败
+    this.requestIndexedDB.onerror = (event) => {
+      console.log('数据库打开报错');
+    };
+    // 如果指定的版本号，大于数据库的实际版本号，就会发生数据库升级事件upgradeneeded。
+    this.requestIndexedDB.onupgradeneeded = (event) => {
+      console.log('数据库升级');
+    };
   }
 
 }

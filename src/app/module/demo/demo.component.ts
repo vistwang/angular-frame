@@ -11,7 +11,10 @@ export class DemoComponent implements OnInit {
   constructor(private demoServiceService: DemoServiceService) { }
 
   ngOnInit() {
+  }
 
+  father = {
+    name: '我是fathername'
   }
 
   btnClick() {

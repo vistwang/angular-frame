@@ -34,6 +34,7 @@ import { HelloComponent } from './hello/hello.component';
 import { SonComponent } from './hello/son/son.component';
 import { Son2Component } from './hello/son2/son2.component';
 import { ResponsiveFormComponent } from './responsive-form/responsive-form.component';
+import { DemoOnpushComponent } from './demo-onpush/demo-onpush.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { ResponsiveFormComponent } from './responsive-form/responsive-form.compo
     OverlayPanelComponent,
     BujinqiComponent,
     ResponsiveFormComponent,
+    DemoOnpushComponent,
   ],
   imports: [
     CommonModule,

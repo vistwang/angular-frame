@@ -50,6 +50,7 @@
             ],
             "scripts": [
               "node_modules/hammerjs/hammer.min.js",
+              "src/assets/font/iconfont.js",
               {
                 "input": "node_modules/document-register-element/build/document-register-element.js"
               }
@@ -111,8 +112,7 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": [
-            ],
+            "scripts": [],
             "assets": [
               "src/favicon.ico",
               "src/assets"
