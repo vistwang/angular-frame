@@ -32,3 +32,18 @@ body {
   overflow: hidden;
 }
 
+body{
+  position:relative;
+}
+.img {
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  position: absolute;
+  z-index: 100000;
+  transition: 1s;
+}
+.left,.right {width: 10px;height: 10px;border-radius: 100%;position: absolute;}
+.right {right: 0;}
+.under {width: 10px;height: 10px;position: absolute;top: 5px;left: 5px;transform: rotate(45deg)}
+.text {width: 50px;font-size: 10px;line-height: 1;position: absolute;top: -1em;left: -15px;text-align: center;}

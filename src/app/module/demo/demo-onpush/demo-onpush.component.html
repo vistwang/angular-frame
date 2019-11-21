@@ -4,6 +4,14 @@
 <p>count: {{count}}</p>
 <!-- <p>asyncData: {{asyncData | async}}</p> -->
 <p>father name: {{father.name}}</p>
+<div>父元素：<a *ngFor="let item of faArray">{{item }}</a></div>
+
+<div>
+  <onpush-child [faArray]="faArray"></onpush-child>
+</div>
+<button (click)="changeFaArray()">change changeFaArray</button>
 <button (click)="changeName()">change name</button>
 <button (click)="changeAge()">change age</button>
 <button (click)="changeCount()">change count</button>
+<button (click)="changeCount()">add user</button>
+
