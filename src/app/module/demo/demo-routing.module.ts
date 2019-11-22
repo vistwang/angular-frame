@@ -11,6 +11,7 @@ import { DemoHighchartsComponent } from './demo-highcharts/demo-highcharts.compo
 import { DemoHttpComponent } from './demo-http/demo-http.component';
 import { DemoLeaveGuard } from './demo-leave-guard';
 import { DemoMaterialComponent } from './demo-material/demo-material.component';
+import { DemoOnpushComponent } from './demo-onpush/demo-onpush.component';
 import { DemoServerComponent } from './demo-server/demo-server.component';
 import { DemoThreejsComponent } from './demo-threejs/demo-threejs.component';
 import { DemoComponent } from './demo.component';
@@ -36,6 +37,7 @@ const routes: Routes = [
       { path: 'DemoServer', component: DemoServerComponent },
       { path: 'form', component: DemoFormComponent },
       { path: 're-form', component: ResponsiveFormComponent },
+      { path: 'onpush', component: DemoOnpushComponent },
     ]
   }
 ];

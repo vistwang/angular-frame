@@ -1,7 +1,4 @@
-import {
-    AfterViewInit, Component, ElementRef, Input, OnChanges, OnInit, Renderer2, SimpleChanges,
-    TemplateRef, ViewChild, ViewContainerRef
-} from '@angular/core';
+import { AfterViewInit, Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'icon-font',
@@ -11,9 +8,9 @@ import {
 export class IconComponent implements OnInit, AfterViewInit, OnChanges {
 
   constructor(
-    private viewContainerRef: ViewContainerRef,
-    private renderer: Renderer2,
-    private elementRef: ElementRef,
+    // private viewContainerRef: ViewContainerRef,
+    // private renderer: Renderer2,
+    // private elementRef: ElementRef,
     ) { }
   @Input() type: string;
   iconSvg;
