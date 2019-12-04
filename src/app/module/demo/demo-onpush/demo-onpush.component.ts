@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import {
-    ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnInit
+    AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, Input, OnDestroy, OnInit
 } from '@angular/core';
 
 @Component({
@@ -9,9 +9,10 @@ import {
   styleUrls: ['./demo-onpush.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class DemoOnpushComponent implements OnInit {
+export class DemoOnpushComponent implements OnInit, OnDestroy, AfterViewInit {
   @Input() father;
   count = 0;
+  isShow = true;
   me = {
     name: 'xiaoming',
     age: 23,
@@ -105,6 +106,18 @@ export class DemoOnpushComponent implements OnInit {
 
   changeCount() {
     this.count++;
+  }
+
+  isShowChild() {
+    this.isShow = !this.isShow;
+  }
+
+  ngAfterViewInit() {
+    console.log('father');
+  }
+
+  ngOnDestroy() {
+
   }
 
 }

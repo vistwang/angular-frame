@@ -36,6 +36,7 @@ import { Son2Component } from './hello/son2/son2.component';
 import { ResponsiveFormComponent } from './responsive-form/responsive-form.component';
 import { DemoOnpushComponent } from './demo-onpush/demo-onpush.component';
 import { OnpushChildComponent } from './demo-onpush/onpush-child/onpush-child.component';
+import { SocketComponent } from './socket/socket.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { OnpushChildComponent } from './demo-onpush/onpush-child/onpush-child.co
     ResponsiveFormComponent,
     DemoOnpushComponent,
     OnpushChildComponent,
+    SocketComponent,
   ],
   imports: [
     CommonModule,

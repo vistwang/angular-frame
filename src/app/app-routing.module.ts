@@ -20,14 +20,18 @@ const routes: Routes = [
         path: '',
         component: LayoutComponent,
         children: [
-          {
-            path: '',
-            redirectTo: 'demo', pathMatch: 'full'
-          },
+          // {
+          //   path: '',
+          //   redirectTo: 'demo', pathMatch: 'full'
+          // },
           {
             path: 'demo',
             loadChildren: () => import('./module/demo/demo.module').then(m => m.DemoModule)
           },
+          {
+            path: 'router',
+            loadChildren: () => import('./module/demo-router/demo-router.module').then(r => r.DemoRouterModule)
+          }
         ]
       }
     ]

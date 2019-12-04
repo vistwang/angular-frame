@@ -3,12 +3,13 @@
 <p>age: {{me.age}}</p>
 <p>count: {{count}}</p>
 <!-- <p>asyncData: {{asyncData | async}}</p> -->
-<p>father name: {{father.name}}</p>
+<!-- <p>father name: {{father.name}}</p> -->
 <div>父元素：<a *ngFor="let item of faArray">{{item }}</a></div>
 
 <div>
-  <onpush-child [faArray]="faArray"></onpush-child>
+  <onpush-child *ngIf="isShow" [faArray]="faArray"></onpush-child>
 </div>
+<button (click)="isShowChild()">isShow</button>
 <button (click)="changeFaArray()">change changeFaArray</button>
 <button (click)="changeName()">change name</button>
 <button (click)="changeAge()">change age</button>
