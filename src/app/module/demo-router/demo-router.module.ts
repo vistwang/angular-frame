@@ -6,6 +6,7 @@ import { Router3Component } from './router3/router3.component';
 import { Router4Component } from './router4/router4.component';
 import { IndexComponent } from './index/index.component';
 import { RouterRoutingModule } from './router-routing.module';
+import { WebSharedModule } from '@web-shared';
 
 
 
@@ -13,7 +14,8 @@ import { RouterRoutingModule } from './router-routing.module';
   declarations: [Router1Component, Router2Component, Router3Component, Router4Component, IndexComponent],
   imports: [
     CommonModule,
-    RouterRoutingModule
+    RouterRoutingModule,
+    WebSharedModule
   ]
 })
 export class DemoRouterModule { }

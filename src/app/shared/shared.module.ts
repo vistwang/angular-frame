@@ -8,6 +8,7 @@ import { CarouselModule } from './component/carousel/carousel.module';
 import { IconModule } from './component/icon/icon.module';
 import { TextareaModule } from './component/textarea/textarea.module';
 import { OnErrorImgModule } from './directive/on-error-img/on-error-img.module';
+import { ImageModule } from './component/image/image.module';
 
 @NgModule({
   declarations: [],
@@ -18,7 +19,8 @@ import { OnErrorImgModule } from './directive/on-error-img/on-error-img.module';
     CarouselModule,
     MatTableModule,
     TextareaModule,
-    IconModule
+    IconModule,
+    ImageModule
   ],
   exports: [
     HttpClientModule,
@@ -27,7 +29,8 @@ import { OnErrorImgModule } from './directive/on-error-img/on-error-img.module';
     MatTableModule,
     MatListModule,
     TextareaModule,
-    IconModule
+    IconModule,
+    ImageModule
   ]
 })
 export class WebSharedModule { }

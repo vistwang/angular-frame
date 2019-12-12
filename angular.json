@@ -46,10 +46,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/viewerjs/dist/viewer.min.css"
             ],
             "scripts": [
               "node_modules/hammerjs/hammer.min.js",
+              "node_modules/viewerjs/dist/viewer.min.js",
               "src/assets/font/iconfont.js",
               {
                 "input": "node_modules/document-register-element/build/document-register-element.js"

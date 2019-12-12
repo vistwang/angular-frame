@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-router1',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Router1Component implements OnInit {
 
-  constructor() { }
-
+  constructor(private domSanitizer: DomSanitizer ) { }
+  name: any = 'router1     works!';
   ngOnInit() {
+    this.name = this.name.replace(/\s/g,"&nbsp;");
   }
 
 }

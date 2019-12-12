@@ -13,7 +13,7 @@ const routes: Routes = [
       //   redirectTo: 'login', pathMatch: 'full'
       // },
       {
-        path: 'login', // 登录页立即加载
+        path: 'index', // 登录页立即加载
         component: LoginComponent
       },
       {

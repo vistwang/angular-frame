@@ -1,0 +1,56 @@
+// .box{
+//   // display: grid;
+//   // grid-template-columns: repeat(auto-fill, 140px);
+//   // grid-template-rows: repeat(auto-fill, 125px);
+//   // grid-auto-flow: column dense;
+//   // grid-auto-flow: row dense;
+
+//     width: 100%;
+//     overflow: hidden;
+//     padding: 10px 0px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+
+//     &:after{ //重要
+//       flex: auto;
+//       content: "";
+//     }
+//     > div{
+//       padding: 50px;
+//       background-color: sandybrown;
+//       display: inline-flex;
+//       align-items: flex-start;
+//       margin: 10px 10px 10px 10px;
+//       align-items: center;
+
+//       // &.filler{
+//       //   flex-grow: 1;
+//       // }
+//     }
+
+//     // > div:last-child{
+//     //   margin-right: auto;
+//     // }
+
+//     .heigh-0{
+//       height: 0;
+//       width: 140px;
+//       padding: 0;
+//     }
+// }
+
+.box {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, 140px);
+  grid-gap: 10px;
+
+  > div{
+    width: 140px; height:140px;
+    background-color: skyblue;
+    margin-top: 5px;
+  }
+}
+
+

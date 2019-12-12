@@ -21,7 +21,7 @@ export class AppComponent implements OnInit {
 
     this.initIndexedDB();
     this.navigationEnd$.subscribe((url) => {
-      console.log(url);
+      console.log('当前路由：' + url);
     });
 
     // if (typeof Worker !== 'undefined') {
