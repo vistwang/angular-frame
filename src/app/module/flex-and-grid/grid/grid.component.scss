@@ -1,0 +1,12 @@
+.grid-box{
+  display: grid;
+  // display: inline-grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-template-rows: repeat(auto-fill, 100px);
+  justify-items: center;
+  justify-content: space-between;
+  .item{
+    width: 80px;
+    height: 80px;
+  }
+}

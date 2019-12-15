@@ -6,11 +6,83 @@
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
-    animation: itemAnimation 10s linear 0s infinite;
+    // animation: itemAnimation 10s linear 0s infinite;
   }
 }
 
 @keyframes itemAnimation{
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
+}
+
+.dice-box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .dice{
+    display: inline-flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 300px;
+    .item{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #000;
+    }
+  }
+
+  .dice1{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dice2{
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dice3{
+    justify-content: space-between;
+    flex-direction: column;
+    .item:nth-child(2){
+      align-self: center;
+    }
+    .item:nth-child(3){
+      align-self: flex-end;
+    }
+  }
+  .dice4{
+    flex-wrap: wrap;
+    .column {
+      flex-basis: 100%;
+      display: inline-flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+  .dice5{
+    flex-wrap: wrap;
+    .column {
+      flex-basis: 100%;
+      display: inline-flex;
+      justify-content: space-around;
+      align-items: center;
+
+      &:nth-child(2){
+        justify-content: center;
+      }
+    }
+  }
+  .dice6{
+    flex-wrap: wrap;
+    .column{
+      flex-basis: 100%;
+      display: inline-flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
 }
