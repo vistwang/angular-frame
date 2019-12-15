@@ -31,6 +31,10 @@ const routes: Routes = [
           {
             path: 'router',
             loadChildren: () => import('./module/demo-router/demo-router.module').then(r => r.DemoRouterModule)
+          },
+          {
+            path: 'flex-grid',
+            loadChildren: () => import('./module/flex-and-grid/flex-and-grid.module').then(r => r.FlexAndGridModule)
           }
         ]
       }

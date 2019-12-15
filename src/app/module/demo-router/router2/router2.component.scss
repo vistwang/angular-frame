@@ -1,0 +1,26 @@
+.box{
+  width: 500px;
+  height: 70px;
+  height: 500px;
+  display: inline-flex;
+  background-color: #999;
+  padding: 10px;
+  input{
+    // flex-grow: 1;
+    height: 70px;
+  }
+  button{
+    width: 80px;
+    height: 50px;
+    background-color: skyblue;
+  }
+
+  .item:nth-child(2){
+    align-self: center;
+  }
+
+  .item:nth-child(3){
+    align-self: flex-end;
+  }
+}
+

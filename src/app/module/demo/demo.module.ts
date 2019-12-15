@@ -37,6 +37,7 @@ import { ResponsiveFormComponent } from './responsive-form/responsive-form.compo
 import { DemoOnpushComponent } from './demo-onpush/demo-onpush.component';
 import { OnpushChildComponent } from './demo-onpush/onpush-child/onpush-child.component';
 import { SocketComponent } from './socket/socket.component';
+import { ScreenshotsComponent } from './screenshots/screenshots.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { SocketComponent } from './socket/socket.component';
     DemoOnpushComponent,
     OnpushChildComponent,
     SocketComponent,
+    ScreenshotsComponent,
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,16 @@
+.flex-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .item{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    animation: itemAnimation 10s linear 0s infinite;
+  }
+}
+
+@keyframes itemAnimation{
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
