@@ -19,6 +19,7 @@ import { HelloComponent } from './hello/hello.component';
 import { ResponsiveFormComponent } from './responsive-form/responsive-form.component';
 import { SocketComponent } from './socket/socket.component';
 import { ScreenshotsComponent } from './screenshots/screenshots.component';
+import { AsyncAwaitComponent } from './async-await/async-await.component';
 
 const routes: Routes = [
   {
@@ -42,6 +43,7 @@ const routes: Routes = [
       { path: 'onpush', component: DemoOnpushComponent },
       { path: 'socket', component: SocketComponent },
       { path: 'screenshots', component: ScreenshotsComponent },
+      { path: 'asyncAwait', component: AsyncAwaitComponent },
     ]
   }
 ];

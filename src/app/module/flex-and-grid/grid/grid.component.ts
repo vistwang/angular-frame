@@ -10,6 +10,13 @@ export class GridComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    setInterval(()=>{
+      console.log('setInterval');
+
+    }, 10000)
   }
 
+  con() {
+
+  }
 }

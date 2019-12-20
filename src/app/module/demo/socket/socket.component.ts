@@ -9,13 +9,33 @@ import { SocketService } from "@web-core";
 export class SocketComponent implements OnInit {
 
   constructor(private socketService: SocketService) { }
-  socket;
+  socketWeb;
+  socketMobile;
   ngOnInit() {
-    this.socket = this.socketService.getSocket();
-
+    this.socketWeb = this.socketService.getSocket('web');
+    this.socketMobile = this.socketService.getSocket('mobile');
     setTimeout(() => {
-      this.socket.emit('events', 'hello socket');
+      this.socketWeb.emit('events', 'hello socketWeb', (data) => {
+        console.log(data);
+      });
     }, 2000);
+
+    this.socketWeb.on('demo', (data) => {
+      console.log(data);
+
+    })
+  }
+
+  sendMessage() {
+    this.socketWeb.emit('events', 'sendMessage', (data) => {
+      console.log(data);
+    });
+  }
+
+  webConnect() {
+  }
+
+  mobileConnect() {
   }
 
 }

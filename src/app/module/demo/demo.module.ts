@@ -38,6 +38,7 @@ import { DemoOnpushComponent } from './demo-onpush/demo-onpush.component';
 import { OnpushChildComponent } from './demo-onpush/onpush-child/onpush-child.component';
 import { SocketComponent } from './socket/socket.component';
 import { ScreenshotsComponent } from './screenshots/screenshots.component';
+import { AsyncAwaitComponent } from './async-await/async-await.component';
 
 @NgModule({
   declarations: [
@@ -63,6 +64,7 @@ import { ScreenshotsComponent } from './screenshots/screenshots.component';
     OnpushChildComponent,
     SocketComponent,
     ScreenshotsComponent,
+    AsyncAwaitComponent,
   ],
   imports: [
     CommonModule,

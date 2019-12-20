@@ -22,13 +22,17 @@ export class SocketService {
     };
   }
 
-  getSocket() {
+  getSocket(type = 'web') {
     if (this.toBeReturnSocket) {
       return this.toBeReturnSocket;
       // return this.socket;
     } else {
       const loginObject = this.getSocketUrl();
-      this.toBeReturnSocket = io.connect(loginObject.loginUrl);
+      this.toBeReturnSocket = io.connect(loginObject.loginUrl, { // todo
+        query: 'loginUserId=' + 111 + '&loginDeptId=' + 222 + '&loginRoleId=' + 333,
+        path: '/' + type,
+        prefix: 'e-office'
+    });
       return this.toBeReturnSocket;
     }
   }
