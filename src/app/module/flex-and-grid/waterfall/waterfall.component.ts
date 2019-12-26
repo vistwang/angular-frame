@@ -14,7 +14,7 @@ export class WaterfallComponent implements OnInit {
   }
 
   renderHeight() {
-    return Math.floor(Math.random()*(100 - 300) + 300) + 'px';
+    return Math.floor(Math.random()*(100 - 400) + 400) + 'px';
   }
   renderColor() {
     return '#' + Math.floor(Math.random()*(2<<23)).toString(16);

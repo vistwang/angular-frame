@@ -1,26 +1,3 @@
 <div class="waterfall-box">
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
-  <div [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
+    <div *ngFor="let item of 'x'.repeat(100).split('')" [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
 </div>
