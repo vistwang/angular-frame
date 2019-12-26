@@ -4,10 +4,12 @@ import { FlexComponent } from './flex/flex.component';
 import { GridComponent } from './grid/grid.component';
 import { IndexComponent } from './index/index.component';
 import { RouterRoutingModule } from './flex-grid-routing.module';
-import { GoogleMapsModule } from '@angular/google-maps'
+import { GoogleMapsModule } from '@angular/google-maps';
+import { SonComponent } from './son/son.component';
+import { WaterfallComponent } from './waterfall/waterfall.component'
 
 @NgModule({
-  declarations: [FlexComponent, GridComponent, IndexComponent],
+  declarations: [FlexComponent, GridComponent, IndexComponent, SonComponent, WaterfallComponent],
   imports: [
     CommonModule,
     RouterRoutingModule,

@@ -1,0 +1,9 @@
+.waterfall-box{
+  // css的多栏布局
+  column-count: 4;
+  column-gap: 10px;
+  > div{
+    display: inline-block;
+    width: 200px;
+  }
+}

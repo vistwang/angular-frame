@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { max } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-flex',
-  templateUrl: './flex.component.html',
-  styleUrls: ['./flex.component.scss']
+  selector: 'app-waterfall',
+  templateUrl: './waterfall.component.html',
+  styleUrls: ['./waterfall.component.scss']
 })
-export class FlexComponent implements OnInit {
+export class WaterfallComponent implements OnInit {
 
   constructor() { }
+
+  ngOnInit() {
+  }
 
   renderHeight() {
     return Math.floor(Math.random()*(100 - 300) + 300) + 'px';
@@ -15,9 +19,5 @@ export class FlexComponent implements OnInit {
   renderColor() {
     return '#' + Math.floor(Math.random()*(2<<23)).toString(16);
   }
-
-  ngOnInit() {
-  }
-
 
 }

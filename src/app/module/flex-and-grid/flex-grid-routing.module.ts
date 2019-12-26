@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { FlexComponent } from './flex/flex.component';
 import { GridComponent } from './grid/grid.component';
+import { WaterfallComponent } from './waterfall/waterfall.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
       {
         path: 'grid',
         component: GridComponent
+      },
+      {
+        path: 'waterfall',
+        component: WaterfallComponent
       }
     ]
   }

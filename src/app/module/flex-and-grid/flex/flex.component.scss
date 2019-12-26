@@ -86,3 +86,15 @@
     }
   }
 }
+
+.waterfall-box{
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  flex-wrap: wrap;
+  > div{
+    display: inline-block;
+    width: 200px;
+  }
+
+}

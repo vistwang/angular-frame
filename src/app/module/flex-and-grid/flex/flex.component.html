@@ -61,3 +61,7 @@
       </div>
   </div>
 </div>
+
+<div class="waterfall-box">
+  <div *ngFor="let item of 'x'.repeat(100).split('')" [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
+</div>

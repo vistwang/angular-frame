@@ -9,7 +9,16 @@ export class IndexComponent implements OnInit {
 
   constructor() { }
 
+  config= {
+    name: '小明',
+    age: 14,
+    hobby: ['篮球', '足球', '乒乓球']
+  }
+
   ngOnInit() {
+    setTimeout(() => {
+      this.config.age = 25;
+    }, 3000);
   }
 
 }
