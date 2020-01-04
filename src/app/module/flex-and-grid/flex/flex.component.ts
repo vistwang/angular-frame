@@ -17,6 +17,16 @@ export class FlexComponent implements OnInit {
   }
 
   ngOnInit() {
+    let xxx = 1;
+    let aaa = 1;
+
+    console.log('xxx', ++xxx);
+    console.log('aaa', aaa++);
+    console.log('--------------------------');
+    console.log('xxx', xxx);
+    console.log('aaa', aaa);
+
+
   }
 
 

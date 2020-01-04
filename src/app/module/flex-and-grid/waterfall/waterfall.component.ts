@@ -11,6 +11,7 @@ export class WaterfallComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
   renderHeight() {

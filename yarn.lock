@@ -198,6 +198,13 @@
   resolved "https://registry.npm.taobao.org/@angular/forms/download/@angular/forms-9.0.0-rc.6.tgz#ed8f2c8dbf7cce07dd099cdc20cb723c4eb2f1e1"
   integrity sha1-7Y8sjb98zgfdCZzcIMtyPE6y8eE=
 
+"@angular/google-maps@^9.0.0-rc.0":
+  version "9.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@angular/google-maps/-/google-maps-9.0.0-rc.0.tgz#40bf8c2fa4115e16945526fdaead163b03023175"
+  integrity sha512-n9ZfqZOu7ZBgk4THN3bDwKvNchma/fveGF0DQNQFWhU2flokLtJQnLCucJx8FURZkIJX2QzKoORlCGpfb1/xpQ==
+  dependencies:
+    "@types/googlemaps" "^3.37.0"
+
 "@angular/language-service@~9.0.0-rc.6":
   version "9.0.0-rc.6"
   resolved "https://registry.npm.taobao.org/@angular/language-service/download/@angular/language-service-9.0.0-rc.6.tgz#0bf10c41120880d40a8f4b3d3c134032a0b3d410"
@@ -1105,6 +1112,11 @@
     "@types/events" "*"
     "@types/minimatch" "*"
     "@types/node" "*"
+
+"@types/googlemaps@^3.37.0":
+  version "3.39.0"
+  resolved "https://registry.yarnpkg.com/@types/googlemaps/-/googlemaps-3.39.0.tgz#871b4649c0995f9d013f5edee776809e599977f7"
+  integrity sha512-SiD5JrB5wkA2JvkP7Tn3D+L4F50QXtnQI+J6Y/HnDhfyp0vlB6tNz14BuOOXV1rwP2vnTwE1uqNjfaKXCmuHDg==
 
 "@types/highcharts@^5.0.44":
   version "5.0.44"
@@ -5512,6 +5524,13 @@ neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1:
   version "2.6.1"
   resolved "https://registry.npm.taobao.org/neo-async/download/neo-async-2.6.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fneo-async%2Fdownload%2Fneo-async-2.6.1.tgz#ac27ada66167fa8849a6addd837f6b189ad2081c"
   integrity sha1-rCetpmFn+ohJpq3dg39rGJrSCBw=
+
+ng-viewer@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ng-viewer/-/ng-viewer-1.0.0.tgz#7735272009205e998b59f228367e19f74785651a"
+  integrity sha512-4Q/qLbH2f7Pfof0+OXmjA708qG7H9FgPdmnivEnWiSWtGPAIWNzox2Z4b3qptCMXbwk0tUKhEUC3GCLBPQAIPg==
+  dependencies:
+    tslib "^1.9.0"
 
 nice-try@^1.0.4:
   version "1.0.5"

@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-declare var Viewer: any;
 @Component({
   selector: 'app-image',
   templateUrl: './image.component.html',
@@ -18,6 +17,6 @@ export class ImageComponent implements OnInit {
   _Viewer;
 
   ngOnInit() {
-    this._Viewer = new Viewer(this.imgload.nativeElement, {});
+
   }
 }
