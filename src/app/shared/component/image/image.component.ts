@@ -13,9 +13,6 @@ export class ImageComponent implements OnInit {
 
   @ViewChild('imgload', { static: true }) imgload: ElementRef;
 
-
-  _Viewer;
-
   ngOnInit() {
 
   }
