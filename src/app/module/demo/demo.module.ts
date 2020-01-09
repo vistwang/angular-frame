@@ -39,6 +39,7 @@ import { OnpushChildComponent } from './demo-onpush/onpush-child/onpush-child.co
 import { SocketComponent } from './socket/socket.component';
 import { ScreenshotsComponent } from './screenshots/screenshots.component';
 import { AsyncAwaitComponent } from './async-await/async-await.component';
+import { CurrieFuncComponent } from './currie-func/currie-func.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { AsyncAwaitComponent } from './async-await/async-await.component';
     SocketComponent,
     ScreenshotsComponent,
     AsyncAwaitComponent,
+    CurrieFuncComponent,
   ],
   imports: [
     CommonModule,
