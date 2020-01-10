@@ -1,3 +1,13 @@
 <div class="waterfall-box">
-    <div *ngFor="let item of 'x'.repeat(100).split('')" [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}"></div>
+  <ng-container *ngFor="let item of 'x'.repeat(number).split('');trackBy:trackbyFn;let dindex=index">
+    <ng-container *ngIf="dindex === 0">
+        <div (click)="expressionAdd()" [ngClass]="'item-' + dindex"  [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}">{{dindex}}</div>
+    </ng-container>
+    <ng-container *ngIf="dindex === 1">
+        <div (click)="expressionDelete()" [ngClass]="'item-' + dindex"  [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}">{{dindex}}</div>
+    </ng-container>
+    <ng-container *ngIf="dindex !== 0 && dindex !== 1">
+        <div [ngClass]="'item-' + dindex"  [ngStyle]="{'height': renderHeight(), 'background-color': renderColor()}">{{dindex}}</div>
+    </ng-container>
+  </ng-container>
 </div>

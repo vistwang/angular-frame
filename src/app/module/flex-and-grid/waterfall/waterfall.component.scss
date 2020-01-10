@@ -5,8 +5,31 @@
   column-gap: 10px;
   column-rule: 1px solid skyblue;
   text-align: center;
+  column-fill: auto;
+  div:first-child{
+    column-span: all;
+    display: flex;
+    width: 100%;
+    height: 100px !important;
+    margin-bottom: 30px;
+  }
   > div{
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: black;
     width: 200px;
   }
 }
+
+// column-count: 列数目
+// column-gap: 各列之间间隙宽度
+// column-width: 建议宽度；未必会使用，浏览器基于此数值进行计算。
+// column-rule:列之间分割线宽度，风格，颜色
+// column-rule-width：列之间分割线宽度
+// column-rule-style：列之间分割线风格
+// column-rule-color：列之间分割线颜色
+// column-span: 允许一个元素的宽度跨越多列
+// column-fill: 分列方式
+

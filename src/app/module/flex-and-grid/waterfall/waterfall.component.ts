@@ -10,8 +10,24 @@ export class WaterfallComponent implements OnInit {
 
   constructor() { }
 
+  number = 20;
+
   ngOnInit() {
 
+  }
+
+  expressionAdd(){
+    this.number += 10;
+  }
+
+  expressionDelete(){
+    if(this.number > 10){
+      this.number -= 10;
+    }
+  }
+
+  trackbyFn(index, item) {
+    return index;
   }
 
   renderHeight() {
