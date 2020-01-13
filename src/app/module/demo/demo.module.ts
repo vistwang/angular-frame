@@ -40,6 +40,7 @@ import { SocketComponent } from './socket/socket.component';
 import { ScreenshotsComponent } from './screenshots/screenshots.component';
 import { AsyncAwaitComponent } from './async-await/async-await.component';
 import { CurrieFuncComponent } from './currie-func/currie-func.component';
+import { SortComponent } from './sort/sort.component';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import { CurrieFuncComponent } from './currie-func/currie-func.component';
     ScreenshotsComponent,
     AsyncAwaitComponent,
     CurrieFuncComponent,
+    SortComponent,
   ],
   imports: [
     CommonModule,

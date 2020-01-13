@@ -21,6 +21,7 @@ import { SocketComponent } from './socket/socket.component';
 import { ScreenshotsComponent } from './screenshots/screenshots.component';
 import { AsyncAwaitComponent } from './async-await/async-await.component';
 import { CurrieFuncComponent } from './currie-func/currie-func.component';
+import { SortComponent } from './sort/sort.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,7 @@ const routes: Routes = [
       { path: 'screenshots', component: ScreenshotsComponent },
       { path: 'asyncAwait', component: AsyncAwaitComponent },
       { path: 'currie', component: CurrieFuncComponent },
+      { path: 'sort', component: SortComponent },
     ]
   }
 ];

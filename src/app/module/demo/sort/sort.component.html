@@ -1,0 +1,26 @@
+<p>排序!</p>
+<div class="content">
+  <button (click)="paixu1()">冒泡排序</button>
+    <ul>
+        <ng-container *ngFor="let item of items">
+          <li>{{item}}</li>
+        </ng-container>
+      </ul>
+</div>
+<div class="content">
+  <button (click)="paixu2()">选择排序</button>
+    <ul>
+        <ng-container *ngFor="let item of items2">
+          <li>{{item}}</li>
+        </ng-container>
+      </ul>
+</div>
+<div class="content">
+  <button (click)="paixu3()">快速排序</button>
+    <ul>
+        <ng-container *ngFor="let item of items3">
+          <li>{{item}}</li>
+        </ng-container>
+      </ul>
+</div>
+
