@@ -35,7 +35,7 @@
     "html2canvas": "^1.0.0-rc.5",
     "ng-viewer": "^1.0.1",
     "pnotify": "^4.0.0-beta.2",
-    "prismjs": "^1.17.1",
+    "prismjs": "^1.21.0",
     "rxjs": "~6.5.3",
     "three": "^0.108.0",
     "tslib": "^1.10.0",
