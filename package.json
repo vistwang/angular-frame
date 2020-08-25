@@ -31,7 +31,7 @@
     "core-js": "^3.2.1",
     "document-register-element": "^1.14.3",
     "hammerjs": "^2.0.8",
-    "highcharts": "^7.2.0",
+    "highcharts": "^7.2.2",
     "html2canvas": "^1.0.0-rc.5",
     "ng-viewer": "^1.0.1",
     "pnotify": "^4.0.0-beta.2",
